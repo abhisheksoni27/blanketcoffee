@@ -1,0 +1,25 @@
+i {display:inline;
+    cursor: pointer;
+}
+
+ul li {
+    display: inline !important;
+}
+
+.fa-level-up{
+  color:#abcabc;
+}
+.fa-level-down{
+  color:#cbacba;
+}
+
+.btn-flat{
+  color:white;
+}
+
+.btn-flat:hover{
+  color:white;
+}
+.votes{
+  display: inline;
+}

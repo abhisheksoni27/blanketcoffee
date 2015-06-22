@@ -14,7 +14,10 @@
 .clearfix:after { clear: both; }
 
 body {
+	margin: 0;
+  padding:0;
 	background: #fff;
+	width:100% !important;
 	color: #383a3c;
 	font-weight: 400;
 	font-size: 1em;

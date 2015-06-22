@@ -1,1 +1,0 @@
-Passwords = new Mongo.Collection('password');
