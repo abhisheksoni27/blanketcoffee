@@ -6,28 +6,12 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Abhishek Soni" />
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js" ype="text/javascript"></script>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></script>-->
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
 <body>
-    {{> loginButtons}} {{> animation}} {{> postslist}} 
-
-{{#if currentUser}}
-    {{> writepost}}
-}}{{else}}Log in.{{/if}}
-
+   
 </body>
-<template name="animation">
-    <div class="container demo-1">
-        <div class="content">
-            <div id="large-header" class="large-header">
-                <canvas id="demo-canvas"></canvas>
-                <h1 class="main-title">Blanket <span class="thin">Coffee</span></h1>
-            </div>
-        </div>
-    </div>
-</template>

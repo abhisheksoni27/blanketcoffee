@@ -1,0 +1,241 @@
+.container1 {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100%;
+}
+a{
+    text-decoration: none !important;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+.hyphen {
+    color: white;
+    margin: 0;
+    color: #f9f1e9;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.description {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    color: #f9f1e9;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    font-size: 1.1rem;
+}
+
+body {
+    color: white;
+    background: #2196F3;
+}
+
+.learnmore {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100% !important;
+    color: #000 !important;
+    font-size: 1.1rem;
+    background: #F5F5F5;
+}
+
+.para {
+    padding-top: 0.07%;
+    color: #455A64;
+    margin-top: 1%;
+    position: relative;
+    top: 2px;
+}
+
+.cait {
+    border: #455A64 2px solid !important;
+    margin-left: 1% !important;
+    font-size: 0.9rem !important;
+}
+
+.cait:hover {}
+
+.turquoisecolor {
+    padding-top: 5%;
+    background: #00BFA5 !important;
+}
+
+.whitecolor {
+    background: #fff !important;
+}
+
+.quote {
+    color: #000;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.quotebody {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.quotespan {
+    font-weight: 400;
+}
+
+.graycolor {
+    background: #F5F5F5;
+    color: black;
+}
+
+.legacy {
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.turntotur {
+    background-color: #1DE9B6;
+    color: #A7FFEB !important;
+}
+
+.turntowhite {
+    color: white;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.redcolor {
+    background-color: #607D8B;
+}
+
+.homebar {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.whitecolor {
+    background: #fff;
+}
+
+.navlinks {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: #fff 1px solid;
+    border-radius: 0px;
+    z-index: 10;
+}
+
+.home {
+    position: absolute;
+    left: -0.4%;
+    top: 40.9%;
+    transform: rotate(-90deg);
+}
+
+.blog {
+    position: absolute;
+    left: -0.25%;
+    top: 25%;
+    transform: rotate(-90deg);
+}
+
+.competition {
+    position: absolute;
+    left: 4.79%;
+    top: 5.39%;
+}
+
+.about {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    transform: rotate(-90deg);
+}
+
+.login {
+    position: absolute;
+    left: 17.5%;
+    top: 5.39%;
+}
+.closebt:hover {
+  transform: rotate(-90deg);
+}
+
+.closebt {
+    margin-top: 2%;
+    border-bottom-color: rgb(51, 51, 51);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(51, 51, 51);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(51, 51, 51);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(51, 51, 51);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    display: inline;
+
+    font-size: 14px;
+    height: 52px;
+    line-height: 20px;
+    text-align: center;
+    transform: matrix(6.12323399573677e-17, 1, -1, 6.12323399573677e-17, 0, 0);
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    vertical-align: middle;
+}
