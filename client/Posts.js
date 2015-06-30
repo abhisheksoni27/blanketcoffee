@@ -67,6 +67,10 @@ Template.editor1.events({
         event.preventDefault();
 
         var titleVar = $('.entry-title input').val();
+        var numberofposts = Posts.find({
+            id: Meteor.userId()
+        }).count();
+        numberofposts = numberofposts + 1;
 
 
 
@@ -85,7 +89,7 @@ Template.editor1.events({
 
             console.log("Okay google");
 
-            
+
 
 
 
@@ -97,7 +101,7 @@ Template.editor1.events({
                 image: Meteor.user().services.google.picture,
                 title: titleVar,
                 body: bodyVar,
-
+                nop: numberofposts,
                 date: new Date(),
 
                 slug: formatSlug(titleVar)
@@ -106,6 +110,14 @@ Template.editor1.events({
 
             });
 
+            function currentslug() {
+                console.log("window.location");
+                var lastpost = Posts.find({id:Meteor.userId()}).count();
+                var clug = Posts.find().fetch()[lastpost-1].slug;
+                window.location = "//localhost:3000/" + clug;
+
+            }
+            currentslug();
 
 
         } else {
