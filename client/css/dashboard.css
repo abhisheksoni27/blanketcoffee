@@ -1,0 +1,54 @@
+.bluegray {
+	height: device.width;
+    min-height: 100%;
+    background: #263238;
+    color: #fff;
+    margin: 0 !important;
+    
+}
+
+.blue {
+    margin:0 !important;
+    padding:0 !important;
+    background: #fff !important;
+}
+
+.profileimage {
+	margin: 20px auto;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+   
+}
+
+.noborder{
+    margin: 0 !important;
+    padding: 0 !important;
+    border:none !important;
+}
+
+.nomargin{
+	margin-bottom: 0px;
+}
+.nameowner{
+	font-size: 2.3em;
+}
+
+.collection{
+	color:#212121;
+	border: none;
+}
+
+.fa-edit{
+color:#78909C;
+}
+
+.fa-close{
+	color:#78909C;
+}
+
+.fa-share-alt{
+	color:#78909C;
+}

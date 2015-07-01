@@ -1,0 +1,29 @@
+.whitecolor,
+.whiterow {
+    background: #fff !important;
+}
+
+.post {
+    font-size: 2.1em;
+    margin-top: 13%;
+}
+
+.heading {
+    margin: 0px !important;
+    font-size: 4.1rem;
+}
+
+.coffeecup {
+    padding-top: 3%;
+    fill: #1976D2;
+    width: 25px;
+}
+
+.poster {
+    padding-top: 3%;
+    margin: 0px !important;
+}
+
+.tobeappended{
+    line-height: 2.9rem;
+}

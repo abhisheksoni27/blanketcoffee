@@ -1,0 +1,18 @@
+<template name="editpost">
+<nav>
+        <a class="waves-effect btn-flat cait nocursor logout">Logout</a>
+        <a class="waves-effect btn-flat cait namepost">{{name}}</a>
+    </nav>
+    <main class="editor">
+        <section class="entry-container">
+            <header>
+                <section class="box entry-title">
+                    <input id="entry-title" value="{{title}}" placeholder="Your Post Title" tabindex="1" type="text">
+                </section>
+            </header>
+            <div class="wap">
+                <a class="waves-effect btn-flat cait publish1 publish">Publish</a>
+            </div> {{> GhostEditor}}
+        </section>
+    </main>
+</template>
