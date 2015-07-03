@@ -7,43 +7,47 @@
 a{
     text-decoration: none !important;
 }
-
 .rslides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
 
 .rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
 
 .rslides li:first-child {
-    position: relative;
-    display: block;
-    float: left;
-}
+  position: relative;
+  display: block;
+  float: left;
+  }
 
 .rslides img {
-    display: block;
-    height: auto;
-    float: left;
-    width: 100%;
-    border: 0;
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+.bluecolor{
+    box-shadow: 0px 0px 11px #000;
+    padding-top: 5% !important;
+    background-color: #03A9F4
 }
 
 .hyphen {
     color: white;
     margin: 0;
-    color: #f9f1e9;
+    
     text-align: center;
     font-size: 2.5em;
     font-weight: 400;
@@ -71,10 +75,13 @@ a{
     transform: translate3d(-50%, -50%, 0);
     font-size: 1.1rem;
 }
+div .at-error.card-panel.red-lighten-2,.red{
+    background-color: #fff !important;
+}
 
 body {
-    color: white;
-    background: #2196F3;
+    color: white !important;
+    background: #fff;
 }
 
 .learnmore {
@@ -168,74 +175,12 @@ body {
     z-index: 10;
 }
 
-.home {
-    position: absolute;
-    left: -0.4%;
-    top: 40.9%;
-    transform: rotate(-90deg);
-}
 
-.blog {
-    position: absolute;
-    left: -0.25%;
-    top: 25%;
-    transform: rotate(-90deg);
-}
-
-.competition {
-    position: absolute;
-    left: 4.79%;
-    top: 5.39%;
-}
-
-.about {
-    position: absolute;
-    left: 0%;
-    top: 10%;
-    transform: rotate(-90deg);
-}
-
-.login {
-    position: absolute;
-    left: 17.5%;
-    top: 5.39%;
-}
 .closebt:hover {
   transform: rotate(-90deg);
 }
 
-.closebt {
-    margin-top: 2%;
-    border-bottom-color: rgb(51, 51, 51);
-    border-bottom-style: none;
-    border-bottom-width: 0px;
-    border-image-outset: 0px;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-    border-left-color: rgb(51, 51, 51);
-    border-left-style: none;
-    border-left-width: 0px;
-    border-right-color: rgb(51, 51, 51);
-    border-right-style: none;
-    border-right-width: 0px;
-    border-top-color: rgb(51, 51, 51);
-    border-top-style: none;
-    border-top-width: 0px;
-    box-sizing: border-box;
-    color: rgb(51, 51, 51);
-    cursor: pointer;
-    display: inline;
-
-    font-size: 14px;
-    height: 52px;
-    line-height: 20px;
-    text-align: center;
-    transform: matrix(6.12323399573677e-17, 1, -1, 6.12323399573677e-17, 0, 0);
-    transition-delay: 0s;
-    transition-duration: 0.2s;
-    transition-property: all;
-    transition-timing-function: ease;
-    vertical-align: middle;
+.hyphensibling{
+  font-size: 1.3rem;
 }
+

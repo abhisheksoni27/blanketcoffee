@@ -11,6 +11,7 @@ Router.route('/', function() {
 
 Router.route('/writeapost');
 Router.route('/dashboard');
+Router.route('/postslist');
 Router.map(function() {
 
     this.route('editpost', {

@@ -1,0 +1,124 @@
+.at-title {
+    margin: 0 auto;
+    display: block;
+    font-size: 2.5rem;
+}
+
+.at-oauth {
+    font-size: 1.5rem !important;
+    font-weight: 100;
+}
+
+.at-oauth button {
+    padding: 1%;
+}
+
+h3 {
+    margin-bottom: 5% !important;
+}
+
+.at-sep {
+    margin-top: 2%;
+}
+
+.at-error {
+    font-size: 2rem;
+    color: #263238;
+}
+
+#at-field-email {}
+
+input#at-field-username_and_email {
+    margin-bottom: 0 !important;
+}
+
+input#at-field-username_and_email,
+input#at-field-password,
+input#at-field-username,
+input#at-field-password_again,
+input#at-field-email,
+input#at-field-name {
+	margin:0 !important;
+    width: 30% !important;
+    vertical-align: middle;
+    display: inline;
+}
+
+.at-btn {
+	margin-top: 5% !important;
+    background-color: #233238;
+    font-size: 1.5rem !important;
+    padding: 2% !important;
+    width: 30%;
+    color: #fff;
+}
+.fa-check{
+	color:#1DE9B6;
+}
+
+.at-pwd-link p {
+    display: inline-block;
+    margin-top: 0 !important;
+    background-color: #D4E157 !important;
+    font-size: 1.5rem !important;
+    padding: 2% !important;
+    width: 30% !important;
+    color: #fff !important;
+}
+
+.at-pwd-link {
+    padding-left: 1% !important;
+}
+
+.at-pwd-link p a {
+    color: white !important;
+}
+
+.at-btn:focus {
+    background: #fff !important;
+    color: #263238 !important;
+}
+
+.at-signup p {
+    font-size: 2rem !important;
+}
+
+
+@media(max-width:480px){
+
+
+.at-oauth {
+    font-size: 1.5rem !important;
+    font-weight: 100;
+}
+
+.at-oauth button {
+    padding: 5%;
+    margin:5%;
+}
+
+
+input#at-field-username_and_email,
+input#at-field-password,
+input#at-field-username,
+input#at-field-password_again,
+input#at-field-email,
+input#at-field-name {
+	margin:0 !important;
+    width: 100% !important;
+    vertical-align: middle;
+    display: inline;
+}
+
+
+.at-btn {
+	margin-top: 5% !important;
+    background-color: #233238;
+    font-size: 1.5rem !important;
+    padding: 2% !important;
+    width: 100%;
+    color: #fff;
+}
+
+
+}

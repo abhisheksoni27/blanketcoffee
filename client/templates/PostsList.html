@@ -1,8 +1,15 @@
 <template name="postslist">
     <div class="container">
         <div class="row">
-           {{#each posts}} {{> onepost}} {{/each}}
-            
+            {{#each posts}}
+            <div class="col s12 l4 m6">
+                <ul class="tobechanged">
+                    <li>
+                        {{> material}}
+                    </li>
+                </ul>
+            </div>
+            {{/each}}
         </div>
     </div>
 </template>

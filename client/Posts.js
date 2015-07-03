@@ -21,6 +21,13 @@ Template.writeapost.events({
 
 });
 
+
+Template.body.rendered=function(){
+    Template.myAtForm.replaces("atForm");
+}
+
+
+
 Template.postpage.helpers({
 exists:function(){
 
@@ -160,9 +167,14 @@ Template.editor1.events({
         var bodyVar = Session.get('editor-html');
         var bodymd = Session.get('editor-markdown');
 
+        var describeit = bodymd.split(" ").slice(0,30).join(" ");
+
+
 
         console.log(bodyVar);
         console.log(titleVar);
+        var d = new Date();
+        var d1 = String(d).split(" ").slice(1,4).join(" ");
 
 
 
@@ -186,9 +198,10 @@ Template.editor1.events({
                 title: titleVar,
                 body: bodyVar,
                 nop: numberofposts,
-                date: new Date(),
+                date: d1,
                 md: bodymd,
-                slug: formatSlug(titleVar)
+                slug: formatSlug(titleVar),
+                description:describeit
 
 
 

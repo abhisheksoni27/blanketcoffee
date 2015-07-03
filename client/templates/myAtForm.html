@@ -1,0 +1,14 @@
+<template name="myAtForm">
+    {{#unless hide}}
+    <div class="at-form">
+        <div class="center-align"> {{#if showError}} {{> atError}} {{/if}}
+         {{#if showResult}} {{> atResult}} {{/if}}
+        </div>
+        {{#if showTitle}} {{> atTitle}} {{/if}} 
+        {{#if showSignUpLink}} {{> atSignupLink}} {{/if}} 
+        {{#if showOauthServices}} {{> atOauth}} {{/if}} <br>
+        {{#if showSignInLink}} {{> atSigninLink}} {{/if}} 
+        {{#if showPwdForm}} {{> atPwdForm}} {{/if}}
+    </div>
+    {{/unless}}
+</template>

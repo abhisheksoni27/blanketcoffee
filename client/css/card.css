@@ -1,0 +1,32 @@
+.titlepost{
+	font-size: 2rem;
+color:#000 !important;
+}
+
+.descriptionpost{
+color:#000 !important;
+}
+
+
+.card{
+	overflow:inherit !important;
+}
+
+
+
+.slugpost{
+	color:#000 !important;
+}
+
+.coffeeimage{
+	fill:steelblue !important;
+	width: 10%;
+	height: 25px;
+
+}
+
+.coffees{
+	display: inline;
+	color: #000;
+
+}

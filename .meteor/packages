@@ -8,9 +8,14 @@ meteor-platform
 autopublish
 insecure
 accounts-google
+accounts-facebook
+accounts-twitter
+accounts-github
 accounts-ui
 accounts-password
 iron:router
 jeremy:ghostdown
 
 coffeescript
+useraccounts:unstyled
+aldeed:template-extension
