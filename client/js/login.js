@@ -1,5 +1,5 @@
 window.onload=function(){
-	var delay=500; //1 seconds
+var delay=500; //1 seconds
 
 setTimeout(function(){
 

@@ -1,0 +1,26 @@
+.popout{
+	color:#000
+	;
+}
+
+.collapsible-header{
+	height: 4rem !important;
+	padding: 1% !important;
+	padding-bottom: 3% !important;
+	font-weight: 100;
+	font-size: 1.5rem;
+}
+
+.collapsible-body{
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.fa-beer{
+	color: #FBB117 !important;
+}
+
+.qa{
+	color: #263238;
+	font-size: 2rem;
+}

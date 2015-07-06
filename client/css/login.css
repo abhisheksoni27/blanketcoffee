@@ -4,6 +4,14 @@
     font-size: 2.5rem;
 }
 
+.at-signup{
+    color:yellowgreen;
+}
+
+#at-signUp{
+    color:steelblue !important;
+}
+
 .at-oauth {
     font-size: 1.5rem !important;
     font-weight: 100;

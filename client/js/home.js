@@ -1,5 +1,7 @@
 Template.openjournal.rendered = function() {
-    window.sr = new scrollReveal();
+    
+    var config = { reset: true }
+    window.sr = new scrollReveal(config);
 
 
     (function(c, I, B) {

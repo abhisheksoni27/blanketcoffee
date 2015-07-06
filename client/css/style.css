@@ -5,8 +5,17 @@
     position: relative !important;
 }
 
+
 .editor .entry-preview .entry-preview-content {
     padding: 50px 20px !important;
+}
+
+
+.width{
+    width:100% !important;
+}
+.rendered-markdown{
+    color:#000 !important;
 }
 
 .wap {
@@ -92,4 +101,9 @@ input[type="text"] {
 input[type=text]:focus:not([readonly]) {
     border-bottom: 1px solid #fff;
     box-shadow: 0 1px 0 0 #fff;
+}
+
+textarea{
+    padding-bottom: 0 !importan;
+    height:90% !important;
 }

@@ -1,0 +1,19 @@
+<template name="faq">
+    <p class="qa center-align">Questions to <strong>Coffee</strong> About</p>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    {{#each questions}}
+                    <li>
+                        <div class="collapsible-header"><i class="fa fa-beer fa-fw"></i>{{QuestionTitle}}</div>
+                        <div class="collapsible-body">
+                            <p>{{{Answer}}}</p>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

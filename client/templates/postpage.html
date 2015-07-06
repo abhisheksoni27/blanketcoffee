@@ -1,16 +1,17 @@
 <template name="postpage">
-{{#if exists}}
+    {{#if exists}}
+    <nav style="background-color: white">
+        <ul style="float:left">
+            <li>{{> loginButtons}}</li>
+        </ul>
+    </nav>
     <div class="container1 whitecolor">
         <div class="row whiterow">
-            <div class="col l3">
-                <!-- Promo Content 1 goes here -->
-                <div style="visibility: hidden">""</div>
-            </div>
-            <div class="col s12 m12 l6 post">
-                <h1 class="center-align heading">{{title}}</h1>
+            <div class="col s12 m12 l6 offset-l2 post">
+                <h1 class="center-align heading headingtitle">{{title}}</h1>
                 <div>
-                    <p class="poster" style="float:right;">--{{name}}</p>
-                    <p>
+                    <p class="poster" style="float:right;">--<a target="_blank" href="//blanketcoffee.com/user/{{username}}">{{name}}</a></p>
+                    <p class="svgcoffee">
                         <svg class="coffeecup" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48.083px" height="48.083px" viewBox="0 0 48.083 48.083" style="enable-background:new 0 0 48.083 48.083;" xml:space="preserve">
                             <g>
                                 <g id="Coffee">
@@ -116,8 +117,58 @@
                         </svg>
                         Coffees</p>
                 </div>
+                <div class="sharebuttons center-align">
+                    <ul class="share-buttons">
+                        <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fblanketcoffee.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Facebook.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fblanketcoffee.com&text=:%20http%3A%2F%2Fblanketcoffee.com&via=abhishek27soni" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Twitter.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url=http%3A%2F%2Fblanketcoffee.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Google+.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fblanketcoffee.com&t=&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/Tumblr.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fblanketcoffee.com&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/Pinterest.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fblanketcoffee.com&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/Reddit.png"></a>
+                        </li>
+                        <li>
+                            <a href="mailto:?subject=&body=:%20http%3A%2F%2Fblanketcoffee.com" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Email.png"></a>
+                        </li>
+                    </ul>
+                </div>
                 <div>
                     <p class="tobeappended">{{{body}}}</p>
+                </div>
+                <div class="sharebuttons center-align">
+                    <ul class="share-buttons">
+                        <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fblanketcoffee.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Facebook.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fblanketcoffee.com&text=:%20http%3A%2F%2Fblanketcoffee.com&via=abhishek27soni" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Twitter.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url=http%3A%2F%2Fblanketcoffee.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Google+.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fblanketcoffee.com&t=&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/Tumblr.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fblanketcoffee.com&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/Pinterest.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fblanketcoffee.com&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img src="images/flat_web_icon_set/color/Reddit.png"></a>
+                        </li>
+                        <li>
+                            <a href="mailto:?subject=&body=:%20http%3A%2F%2Fblanketcoffee.com" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="images/flat_web_icon_set/color/Email.png"></a>
+                        </li>
+                    </ul>
                 </div>
                 <div id="disqus_thread"></div>
             </div>
@@ -127,7 +178,7 @@
             </div>
         </div>
     </div>
-    {{else}} <p>Doesnt Exist</p>    
+    {{else}}
+    <p>Doesnt Exist</p>
     {{/if}}
-
 </template>

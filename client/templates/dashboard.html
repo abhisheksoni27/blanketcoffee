@@ -2,16 +2,28 @@
     <div class="container1">
         <div class="row nomargin">
             <div class="col s12 m5 l3 bluegray">
-                <img class="profileimage" src="profile.jpg">
-                <p class="nameowner center-align">Lord Voldemort</p>
+                <img class="profileimage" src="{{currentUser.profile.imgurl}}">
+                <p class="nameowner center-align">{{currentUser.profile.name}}</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12"><a class="waves-effect btn-flat cait white" href="/writeapost"><i class="fa fa-edit fa-fw"></i> Write a post</a>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col s12"> <a class="waves-effect btn-flat cait nocursor dashboard logout">Logout</a></div>
+                    </div>
+                </div>
             </div>
             <div class="col s12 m6 l9 blue">
                 <ul class="collection with-header noborder">
                     <li class="collection-header">
-                        <h4>Posts</h4></li>
+                        <h4>Posts</h4>
+                        <div style="float:right">{{#if currentUser}} {{/if}}
+                        </div>
+                    </li>
                     {{#each posts}}
                     <li class="collection-item">
-                        <div>{{title}}<a href="#!" class="secondary-content"><a href="{{pathFor 'editpost'}}"><i class="fa fa-edit fa-lg"></i></a><i class="fa fa-close fa-fw fa-lg"></i><i class="fa fa-share-alt fa-lg"></i></a>
+                        <div>{{title}}<a class="secondary-content"><a href="{{pathFor 'editpost'}}"><i class="fa fa-edit fa-lg"></i></a><i class="fa fa-close fa-fw fa-lg"></i><a href="//blanketcoffee.com/{{slug}}"><i class="fa fa-laptop fa-lg"></i></a></a>
                         </div>
                     </li>
                     {{/each}}

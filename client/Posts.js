@@ -1,19 +1,38 @@
 var describeit = "";
+var desc = ""
+
+
+
 formatSlug = function(value) {
+
     var formatted = value
         .toLowerCase()
         .replace(/ /g, '-')
         .replace(/[-]+/g, '-')
         .replace(/[^\w\x80-\xFF-]+/g, '');
+
+    if (Posts.find({
+            slug: formatted
+        }).fetch().length > 0) {
+
+        var num = Numposts.find().fetch()[0].postnum;
+        formatted = formatted + String(num);
+        
+        Meteor.call('changenumposts');
+    }
     return formatted;
 }
+
+
+
+
 
 Template.writeapost.events({
 
     'click .nocursor': function() {
         if (Meteor.userId()) {
             Meteor.logout(function() {
-                window.location = "//localhost:3000/"
+                window.location = "//blanketcoffee.com/"
             });
         }
 
@@ -22,24 +41,58 @@ Template.writeapost.events({
 });
 
 
-Template.body.rendered=function(){
+
+Template.dashboard.events({
+
+    'click .nocursor': function() {
+        if (Meteor.userId()) {
+            Meteor.logout(function() {
+                window.location = "//blanketcoffee.com/"
+            });
+        }
+
+    }
+
+});
+
+
+Template.body.rendered = function() {
     Template.myAtForm.replaces("atForm");
 }
 
 
 
 Template.postpage.helpers({
-exists:function(){
+    exists: function() {
 
-    if(Posts.find({slug:document.URL.split('/')[3]}).count() > 0)
-        {return true;}
-    else{return false;}
-}
+        if (Posts.find({
+                slug: document.URL.split('/')[3]
+            }).count() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+
+
+
+    'uname': function() {
+
+
+
+
+
+
+
+
+    }
 });
 
 Template.dashboard.helpers({
     posts: function() {
-        return Posts.find({});
+        return Posts.find({
+            id: Meteor.userId()
+        });
     }
 
 })
@@ -58,35 +111,8 @@ Template.editpost.rendered = function() {
     var bodypost = Posts.find({
         _id: agn
     }).fetch()[0].md;
-    $("pre span").text(bodypost);
+    $("textarea").val(bodypost);
 }
-
-
-Template.editpost.events({
-    'click .publish1': function(e) {
-        e.preventDefault();
-
-        var currentPostId = this._id;
-
-        var postProperties = {
-            title: $('.entry-title input').val(),
-            body: Session.get('editor-html')
-        }
-
-        Posts.update(currentPostId, {
-            $set: postProperties
-        }, function(error) {
-            if (error) {
-                // display the error to the user
-                console.log(error.reason);
-            } else {
-                Router.go('/dashboard', {
-                    slug: Posts.find(currentPostId).slug
-                });
-            }
-        });
-    }
-});
 
 
 
@@ -111,34 +137,15 @@ Template.dashboard.rendered = function() {
 
 }
 
-Template.writeapost.helpers({
-    name: function() {
-        return Meteor.user().profile.name;
-    }
-
-});
-Template.editor1.helpers({
-    name: function() {
-        return Meteor.user().profile.name;
-    }
-
-});
-
-Template.editor1.events({
-
-    'click .publish': function() {
-        Session.get('editor-html');
+Template.dashboard.helpers({
+    'slug': function() {
+        var toid = this._id;
+        return Posts.findOne(toid).slug;
 
 
     }
+})
 
-});
-Template.postslist.helpers({
-
-    posts: function() {
-        return Posts.find({});
-    }
-});
 
 Template.postpage.helpers({
 
@@ -148,8 +155,22 @@ Template.postpage.helpers({
 
 });
 
+Template.blog.helpers({
+
+    posts: function() {
+        return Posts.find({});
+    },
+
+});
 
 
+Template.material.helpers({
+
+    posts: function() {
+        return Posts.find({});
+    },
+
+});
 
 Template.editor1.events({
 
@@ -157,6 +178,8 @@ Template.editor1.events({
         event.preventDefault();
 
         var titleVar = $('.entry-title input').val();
+        var testid = Meteor.userId();
+        var nameu = Meteor.users.find(testid).fetch()[0].profile.username;
         var numberofposts = Posts.find({
             id: Meteor.userId()
         }).count();
@@ -167,14 +190,44 @@ Template.editor1.events({
         var bodyVar = Session.get('editor-html');
         var bodymd = Session.get('editor-markdown');
 
-        var describeit = bodymd.split(" ").slice(0,30).join(" ");
+        var imgtags = ""
+        var ist = bodyVar.indexOf(' src=') + 5;
+        var iend = bodyVar.indexOf('alt') - 2;
+        if (ist !== 4 && iend !== -3) {
+            imgtags = bodyVar.slice(ist, iend);
+            console.log(imgtags);
+        } else {
+            imgtags = "https://placehold.it/250x250";
+        }
+
+
+
+
+        var converter = new showdown.Converter()
+        var text = Session.get('editor-markdown');
+        var converted = converter.makeHtml(text);
+        var st = text.indexOf('//#description//') + 16;
+        var end = text.indexOf('//description#//') - 16;
+        if (st !== 15 && end !== -18) {
+            desc = text.substr(st, end);
+
+        } else {
+            desc = bodymd.split(" ").slice(0, 30).join(" ");
+        }
+
+
+
+        var a1 = bodyVar.indexOf("<p>//#");
+        var a2 = bodyVar.indexOf("#//</p>") + 7;
+        var rem = bodyVar.substr(a1, a2);
+        bodyVar = bodyVar.replace(rem, "");
 
 
 
         console.log(bodyVar);
         console.log(titleVar);
         var d = new Date();
-        var d1 = String(d).split(" ").slice(1,4).join(" ");
+        var d1 = String(d).split(" ").slice(1, 4).join(" ");
 
 
 
@@ -183,25 +236,18 @@ Template.editor1.events({
 
             console.log("Crossed");
 
-            console.log("Okay google");
-
-
-
-
-
-
             Posts.insert({
                 name: Meteor.user().profile.name,
                 id: Meteor.userId(),
-                email: Meteor.user().services.google.email,
-                image: Meteor.user().services.google.picture,
                 title: titleVar,
                 body: bodyVar,
                 nop: numberofposts,
                 date: d1,
                 md: bodymd,
                 slug: formatSlug(titleVar),
-                description:describeit
+                description: desc,
+                img: imgtags,
+                username: nameu
 
 
 
@@ -212,20 +258,15 @@ Template.editor1.events({
                 var lastpost = Posts.find({
                     id: Meteor.userId()
                 }).count();
-                var clug = Posts.find().fetch()[lastpost - 1].slug;
-                window.location = "//localhost:3000/" + clug;
+                var clug = Posts.find({id:Meteor.userId()}).fetch()[lastpost - 1].slug
+                window.location = "//blanketcoffee.com/" + clug;
 
             }
             currentslug();
 
 
-        } else {
-            $("body").append("<p>You cannot post more than once.</p>");
-
-
-
-
         }
 
     }
+
 });

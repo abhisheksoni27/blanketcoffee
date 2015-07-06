@@ -1,0 +1,144 @@
+<template name="howtomarkdown">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+{{#markdown}} 
+Markdown Basics
+------
+[Markdown](http://daringfireball.net/projects/markdown/) is like the Oxford-Dictionary of English for First Graders. Markdown is easy-to-write, and easy-to-read, and is faster than old **add-link** and **select bold text** editors.
+
+----
+Basic writing
+
+**Paragraphs**
+
+Paragraphs in Markdown are just one or more lines of consecutive text followed by one or more blank lines.
+
+Like this:
+
+>I am afraid of ghosts, Pudge, and home is full of them.
+
+>The labyrinth of suffering.
+
+----
+Headings
+
+You can create a heading by adding one or more # symbols before your heading text. The number of # is inversely proportional to the size of the text.
+
+># The largest heading
+>## The second largest heading
+>#### The fourth largest heading
+
+----
+Blockquotes
+
+You can indicate blockquotes with a `>`.
+
+###In the words of Ted Mosby:
+
+> When it is past 2 am, go to your home and sleep.
+
+----
+
+Styling text
+
+You can make text bold or italic.
+
+One `*` or *_* arround the text is italic, two is **bold**.
+
+>\*This text will be italic\*
+*This text will be italic*
+
+
+
+>\*\*This text will be bold**
+**This text will be bold**
+
+-----
+
+Unordered lists
+
+You can make an unordered list by preceding list items with either a * or a -.
+
+\* Item
+<br>
+\* Item
+<br>
+\* Item
+
+\- Item<br>
+\- Item<br>
+\- Item
+
+----
+Ordered lists
+----
+
+You can make an ordered list by preceding list items with a number.
+
+1. Item
+2. Item
+3. Item
+Nested lists
+
+You can create nested lists by indenting list items by two spaces.
+
+>1. Item 1
+  1. A corollary to the above item.
+  2. Yet another point to consider.
+2. Item 2
+  * A corollary that does not need to be ordered.
+    * This is indented four spaces, because it's two spaces further than the item above.
+    * You might want to consider making a new list.
+3. Item 3
+
+----
+
+Links
+
+
+You can create an inline link by using this syntax: 
+
+`(Text to appear in place of link)[URL]`
+
+Example:
+
+`[BlanketCoffee](//www.blanketcoffee.com).`
+
+will result in
+
+[BlanketCoffee](//www.blanketcoffee.com).
+
+----
+Images
+
+Images are just like links, except the fact that their syntax precedes an exclamation mark `!`.
+
+`!(Alternate text to be shown when image is not loaded for some idiotic reason)[URL of the image]`
+
+Example:
+
+`![Alright](https://goo.gl/TgwwU5).`
+
+will result in
+
+<img src="https://goo.gl/TgwwU5" class="responsive-img">
+
+----
+Description Tag
+
+
+That is about it, for Markdown. And wait, hang on.
+
+The description text shown on the posts list on the blog is explicitly added using this syntax:
+
+`//#description// --Your Description text-- //description#//`
+
+Don't worry. It will be trimmed in the blog post. Happy Writing.
+
+
+{{/markdown}}
+            </div>
+        </div>
+    </div>
+</template>

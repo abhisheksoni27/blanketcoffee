@@ -1,7 +1,8 @@
 <template name="editor1">
     <nav>
         <a class="waves-effect btn-flat cait nocursor logout">Logout</a>
-        <a class="waves-effect btn-flat cait namepost">{{name}}</a>
+        <a class="waves-effect btn-flat cait namepost namepostwhite">{{currentUser.profile.name}}</a>
+        <a class="waves-effect btn-flat markdown1" href="/howtomarkdown" target="_blank">How to type MarkDown?</a>
     </nav>
     <main class="editor">
         <section class="entry-container">

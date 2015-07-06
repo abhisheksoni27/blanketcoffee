@@ -1,54 +1,63 @@
 .bluegray {
-	height: device.width;
-    min-height: 100%;
+    height: 97vmin;
+    padding: 0 !important;
     background: #263238;
     color: #fff;
     margin: 0 !important;
-    
 }
 
 .blue {
-    margin:0 !important;
-    padding:0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
     background: #fff !important;
 }
 
+.white {
+    width: 100%;
+    color: white;
+}
+
+.dashboard {
+    width: 100%;
+
+}
+
 .profileimage {
-	margin: 20px auto;
-   display: block;
+    margin: 20px auto;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 250px;
     height: 250px;
-   
 }
 
-.noborder{
+.noborder {
     margin: 0 !important;
     padding: 0 !important;
-    border:none !important;
+    border: none !important;
 }
 
-.nomargin{
-	margin-bottom: 0px;
-}
-.nameowner{
-	font-size: 2.3em;
+.nomargin {
+    margin-bottom: 0px;
 }
 
-.collection{
-	color:#212121;
-	border: none;
+.nameowner {
+    font-size: 2.3em;
 }
 
-.fa-edit{
-color:#78909C;
+.collection {
+    color: #212121;
+    border: none;
 }
 
-.fa-close{
-	color:#78909C;
+.fa-edit {
+    color: #78909C;
 }
 
-.fa-share-alt{
-	color:#78909C;
+.fa-close {
+    color: #78909C;
+}
+
+.fa-share-alt {
+    color: #78909C;
 }

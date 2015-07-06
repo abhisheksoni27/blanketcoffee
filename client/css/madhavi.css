@@ -1,0 +1,335 @@
+.bluish {
+    box-shadow: 0px 0px 17px #000;
+    padding: 0 !important;
+    background:url('madhavibg.png')  no-repeat center center;
+height: 100vh;
+      background-size:cover;
+
+}
+
+.darkblue {}
+
+#notblue {
+    background: white;
+}
+
+.name1 {
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.name {
+    margin-top: 0 !important;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.circleimage {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #fff;
+    color: #039BE5;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 49%;
+    height: 50px;
+    width: 50px;
+}
+
+.hdeeksha {
+    color:white !important;
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    margin-top: 10% !important;
+    border: #fff 15px solid;
+}
+
+.padd {
+    cursor: pointer;
+    padding-top: 9px;
+    color: #000;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.padd:hover {
+    color: #fff;
+}
+
+.circleimage:hover {
+    background: #000;
+    color: #fff;
+}
+
+.imagep {
+    width: 100%;
+  
+}
+
+.wanderlust {
+    font-size: 4rem;
+    font-weight: 100;
+    color: #263238;
+}
+.wanderlusta {
+    font-size: 3rem;
+    font-weight: 100;
+    color: #263238;
+}
+.wanderlustm {
+    font-size: 3rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+.white {
+    color: #263238;
+}
+
+.ii {
+    display: block;
+    margin-top: 15%;
+    padding: 5%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.fa-instagram:hover {
+    color: #795548;
+    background: white;
+   -webkit-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+    
+}
+
+.fa-facebook:hover {
+    background: white;
+    color: #3B5998;
+-webkit-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+
+.fa-twitter:hover {
+    background: white;
+    color: #03A9F4;
+    -webkit-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+
+.fa-pinterest:hover {
+    background: white;
+    color: #d32f2f;
+    -webkit-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+
+.fa-github:hover {
+    background: white;
+    color: #333;
+    -webkit-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+
+.fa-instagram {
+    background-color: #795548;
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.fa-twitter {
+    background-color: #03A9F4;
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.fa-pinterest {
+    color: white;
+    background-color: #d32f2f;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.fa-github {
+    color: white;
+    background-color: #333;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.quote{
+	color:white !important;
+	font-size: 4rem;
+	font-weight: 100;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.quote:hover{
+
+	font-size: 4.1rem;
+
+}
+
+.quotet{
+	color:#00BFA5 !important;
+}
+
+.quoteta{
+    color:#263238 !important;
+}
+
+.sm{
+	font-size: 3.1rem !important;
+}
+.sma{
+    font-size: 5rem !important;
+}
+
+.shadow{
+	box-shadow:0px 0px 7px #000;
+}
+
+.habhishek {
+    color:white !important;
+    margin: 0 auto;
+    width: 500px;
+    height: 325px;
+    margin-top: 10% !important;
+    border: #fff 15px solid;
+}
+
+.bluegraya{
+    height: auto !important;
+}
+
+.namea {
+    margin-top: 0 !important;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.namea1 {
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    font-weight: 100;
+    font-size: 2.7rem;
+}
+
+
+.circleimagea:hover{
+background-color: #039BE5 !important;
+}
+
+.padda {
+    cursor: pointer;
+    padding-top: 9px;
+    color: #039BE5;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.padda:hover {
+    color: #fff !important;
+}
+
+.reddishcolor{
+    background-color: #e53935;
+    color:#fff;
+}
+
+.designed{
+padding-top:7%;
+padding-bottom: 7%;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #fff;
+
+}
+.contactme{
+
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #fff;
+}
+.hovs{
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.hovs:hover{
+    font-size:3rem !important;
+
+}
+
+.myname{
+    color:#263238 !important;
+    font-size: 3rem;
+}
+.mynamem{
+    color:#fff !important;
+    font-size: 3rem;
+}
+
+.iia{
+    display: inline !important;
+    margin:2% !important;
+}
+
+.hmadhavi {
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    margin-top: 15% !important;
+    border: #fff 15px solid;
+    color:#000;
+}
+
+.bluegraym{
+    background-color: #03A9F4 !important;
+}
+
+.quotetm{
+    color:#03A9F4 !important;
+}

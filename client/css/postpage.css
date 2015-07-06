@@ -5,12 +5,18 @@
 
 .post {
     font-size: 2.1em;
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
+
 .heading {
+    color:#000;
     margin: 0px !important;
     font-size: 4.1rem;
+}
+
+.svgcoffee{
+    color:#000 !important;
 }
 
 .coffeecup {
@@ -20,10 +26,12 @@
 }
 
 .poster {
+    color:#000 !important;
     padding-top: 3%;
     margin: 0px !important;
 }
 
 .tobeappended{
+    color:#000 !important;
     line-height: 2.9rem;
 }

@@ -4,6 +4,11 @@
     margin: 0 !important;
     max-width: 100%;
 }
+
+.hyphensibling{
+  color:white;
+}
+
 a{
     text-decoration: none !important;
 }
@@ -80,7 +85,7 @@ div .at-error.card-panel.red-lighten-2,.red{
 }
 
 body {
-    color: white !important;
+
     background: #fff;
 }
 
@@ -118,7 +123,7 @@ body {
     background: #fff !important;
 }
 
-.quote {
+.quotehp {
     color: #000;
     padding-top: 7%;
     padding-bottom: 7%;

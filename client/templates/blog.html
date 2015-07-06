@@ -1,0 +1,42 @@
+<template name="blog">
+    <nav class="navwhite">
+        <ul>
+            <li>
+                <div class="loginbutton">
+
+                {{#if currentUser}}
+                <a href="/dashboard">{{currentUser.profile.name}}</a>
+                {{else}}
+                <a href="/login">Login</a>
+                {{/if}}
+
+
+
+
+                </div>
+            </li>
+            <li>
+                <div class="homebutton"><a href="/">Home</a></div>
+                
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 nametag">
+                <p class="heading center-align">Blanket Coffee</p>
+            </div>
+        </div>
+        <div class="row">
+            {{#each posts}}
+            <div class="col s12 l4 m6">
+                <ul class="tobechanged">
+                    <li>
+                        {{> material}}
+                    </li>
+                </ul>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</template>

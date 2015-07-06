@@ -1,12 +1,17 @@
 <template name="top">
     <div class="links center-align">
-        <a class="waves-effect waves btn-flat navlinks home" href="/">Home</a>
-        <a class="waves-effect waves btn-flat navlinks blog" href="/blog">Blog</a>
-        <a class="waves-effect waves btn-flat navlinks competition" href="/competitions">Competitions</a>
+        <a class="waves-effect waves btn-flat navlinks home" href="/" data-sr>Home</a>
+        <a class="waves-effect waves btn-flat navlinks blog" href="/blog" data-sr>Blog</a>
+        <a class="waves-effect waves btn-flat navlinks competition" href="/competitions" data-sr>Competitions</a>
         <!--Call your modal-->
-        <a id="demo01" class="waves-effect waves btn-flat navlinks about" href="/owners">MAD</a>
+        <a id="demo01" class="waves-effect waves btn-flat navlinks about" href="/owners" data-sr>MAD</a>
         <!--DEMO01-->
-        <a class="waves-effect waves btn-flat navlinks login" href="">{{>loginButtons}}</a>
+         {{#if currentUser}}
+                <a class="waves-effect waves btn-flat navlinks login" href="/dashboard">{{currentUser.profile.name}}</a>
+                {{else}}
+                <a class="waves-effect waves btn-flat navlinks login" href="/login">Login</a>
+                {{/if}}
+        
     </div>
     <div class="container1 demo-1">
         <div class="content">
