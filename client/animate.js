@@ -1,4 +1,17 @@
 Template.top.rendered = function() {
+
+var flag = "false";
+
+ var width = window.innerWidth;
+
+ if(width<480){
+    //do nothing
+ }else{
+    flag="true";
+ }
+
+
+    if(flag==="true"){
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 
     // Main
@@ -196,5 +209,5 @@ Template.top.rendered = function() {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
 
-
+}
 }

@@ -1,8 +1,14 @@
 <template name="editor1">
     <nav>
         <a class="waves-effect btn-flat cait nocursor logout">Logout</a>
+        <a class="waves-effect btn-flat cait nocursor logoutmobile"><i class="icon ion-log-out"></i></a>
+        <a class="waves-effect btn-flat cait publish mobilepublish"><i class=
+        "fa fa-paper-plane-o"></i></a>
+        <a class="waves-effect btn-flat cait homepost" href="/"><i class="icon ion-ios-home-outline"></i></a>
+         <a class="waves-effect btn-flat cait bloglink" href="/"><i class="icon ion-easel"></i></a>
         <a class="waves-effect btn-flat cait namepost namepostwhite">{{currentUser.profile.name}}</a>
-        <a class="waves-effect btn-flat markdown1" href="/howtomarkdown" target="_blank">How to type MarkDown?</a>
+        <a class="waves-effect btn-flat markdown1" href="/howtomarkdown" target="_blank">How to type MarkDown?<i class="icon ion-social-markdown"></i></a>
+        <a class="waves-effect btn-flat markdown2" href="/howtomarkdown" target="_blank"><i class="icon ion-social-markdown"></i></a>
     </nav>
     <main class="editor">
         <section class="entry-container">

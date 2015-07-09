@@ -1,0 +1,6 @@
+
+
+Template.login.rendered = function() {
+    
+
+}

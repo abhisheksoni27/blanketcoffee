@@ -5,6 +5,15 @@
     max-width: 100%;
 }
 
+nav li a{
+  border-bottom: none !important;
+}
+
+.nopadd{
+    padding-bottom: 0 !important ;
+  padding-top: 0 !important;
+}
+
 .hyphensibling{
   color:white;
 }

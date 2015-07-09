@@ -3,21 +3,13 @@
         <ul>
             <li>
                 <div class="loginbutton">
-
-                {{#if currentUser}}
-                <a href="/dashboard">{{currentUser.profile.name}}</a>
-                {{else}}
-                <a href="/login">Login</a>
-                {{/if}}
-
-
-
-
+                    {{#if currentUser}}
+                    <a href="/dashboard">{{currentUser.profile.name}}</a> {{else}}
+                    <a href="/login">Login</a> {{/if}}
                 </div>
             </li>
             <li>
                 <div class="homebutton"><a href="/">Home</a></div>
-                
             </li>
         </ul>
     </nav>
@@ -28,7 +20,7 @@
             </div>
         </div>
         <div class="row">
-            {{#each posts}}
+            {{#if Template.subscriptionsReady}} {{#each posts}}
             <div class="col s12 l4 m6">
                 <ul class="tobechanged">
                     <li>
@@ -36,7 +28,7 @@
                     </li>
                 </ul>
             </div>
-            {{/each}}
+            {{/each}} {{else}} {{> loading}} {{/if}}
         </div>
     </div>
 </template>

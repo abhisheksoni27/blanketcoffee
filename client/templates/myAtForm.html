@@ -6,9 +6,13 @@
         </div>
         {{#if showTitle}} {{> atTitle}} {{/if}} 
         {{#if showSignUpLink}} {{> atSignupLink}} {{/if}} 
+
+
+   {{> loading}}
+
         {{#if showOauthServices}} {{> atOauth}} {{/if}} <br>
-        {{#if showSignInLink}} {{> atSigninLink}} {{/if}} 
-        {{#if showPwdForm}} {{> atPwdForm}} {{/if}}
+   
+        
     </div>
     {{/unless}}
 </template>

@@ -1,5 +1,14 @@
 Template.login.rendered=function(){
 	
+
+    while ($('.at-oauth').length < 1) {
+        //do nothing
+    }
+
+
+    $('.loading').hide();
+
+    
 var delay=500; //1 seconds
 
 setTimeout(function(){
