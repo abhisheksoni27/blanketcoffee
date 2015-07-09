@@ -21,6 +21,15 @@ cd blanketcoffee
 meteor
 ```
 
+# Open Source
+
+Open Blog explained: The sole reason this was made was to reduce the gap between post from authors who are famaous, and awesome, and those who were awesome at writing but weren't famous yet. Open blog means, we can write together, on the same feeging blog.
+
+#Goodies and Souvenirs
+
+Goodies and Souvenirs: Good posts are not only rewarded by companies and magazines reading your post, we reward you too. Check it out in FAQ section.
+
+
 # About Us
 
 >What if the stars in the sky are bullet holes left by berzerk wars?
@@ -80,11 +89,3 @@ Curently Images work with external URLs, but uploading is on the __To-do-List.__
 If you want to contribute, issue a PR to the development branch.
 
 Any feature request can either be emailed at __hello@blanketcoffee.com__, or can be filed under the `issues` section of this repo.
-
-# Open Source
-
-Open Blog explained: The sole reason this was made was to reduce the gap between post from authors who are famaous, and awesome, and those who were awesome at writing but weren't famous yet. Open blog means, we can write together, on the same feeging blog.
-
-#Goodies and Souvenirs
-
-Goodies and Souvenirs: Good posts are not only rewarded by companies and magazines reading your post, we reward you too. Check it out in FAQ section.
