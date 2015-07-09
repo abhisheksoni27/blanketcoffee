@@ -10,10 +10,11 @@ accounts-facebook
 accounts-twitter
 accounts-github
 accounts-ui
-
+meteorhacks:fast-render
 iron:router
 jeremy:ghostdown
 markdown
+spiderable
 useraccounts:unstyled
 aldeed:template-extension
 
