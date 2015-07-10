@@ -88,4 +88,4 @@ Curently Images work with external URLs, but uploading is on the __To-do-List.__
 
 If you want to contribute, issue a PR to the development branch.
 
-Any feature request can either be emailed at __hello@blanketcoffee.com__, or can be filed under the `issues` section of this repo.
+Any feature request can either be emailed at __abhishek@blanketcoffee.com__, or can be filed under the `issues` section of this repo.
